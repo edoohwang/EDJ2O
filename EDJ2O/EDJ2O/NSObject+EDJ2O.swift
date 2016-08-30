@@ -15,7 +15,7 @@ public extension NSObject {
      - returns: 模型数组
      */
     // FIXME: 返回值如何动态获得数组元素类型
-    class func ed_objectWithDictionaryArray(dictionaries: [[String: AnyObject!]])->[AnyObject] {
+    class func ed_objectsWithDictionaryArray(dictionaries: [[String: AnyObject!]])->[AnyObject] {
         var objs = [AnyObject]()
         
         for dict in dictionaries {
@@ -93,7 +93,7 @@ public extension NSObject {
                     
                     if name == innerObjectKeyString {
                        let clazz: AnyClass = NSClassFromString(innerObjectTypeString)!
-                        let modals = (clazz as! NSObject.Type).ed_objectWithDictionaryArray(dictArray)
+                        let modals = (clazz as! NSObject.Type).ed_objectsWithDictionaryArray(dictArray)
                        setValue(modals, forKey: name)
                     }
                 }
