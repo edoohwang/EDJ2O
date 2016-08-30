@@ -110,7 +110,7 @@ public extension NSObject {
      
      - returns: 需要解释模型内部自定义对象数组的类型字典
      */
-    func ed_innerObjectOfArray() -> [String: AnyClass]? {
+    func ed_innerObjectTypeOfArray() -> [String: AnyClass]? {
         return nil
     }
     
