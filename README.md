@@ -16,18 +16,18 @@ Drag the EDJ2O/EDJ2O folder into your project.
 ---
 you can make a object and set the key-value with a `json/dictionaty`:
 
-```
+```Swift
 let myObject = MyObject.ed_objectWithDictionary(objectkeyValueDictionaty) as! MyObject
 ```
 and if you want to make a object array and set the key-value with a `json/dictionaty array`:
 
-```
+```Swift
 let myObjects = MyObject.ed_objectsWithDictionaryArray([objectkeyValueDictionaty]) as! [MyObject]
 ```
 ###Nesting
 if you customize your object inner have customization object array,you need override the method in your customization class to make EDJ2O change correct：
 
-```
+```Swift
 class MyObject: NSObject {
    func ed_innerObjectTypeOfArray() -> [String: AnyClass]? {
         return ["innerObjArray1"，MyinnerObjType1，
