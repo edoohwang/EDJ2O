@@ -81,7 +81,7 @@ public extension NSObject {
                 
             } else if value is NSArray {
                 
-                guard let innerObjectOfArrayDictionary = self.ed_innerObjectOfArray() else {
+                guard let innerObjectOfArrayDictionary = self.ed_innerObjectTypeOfArray() else {
                     setValue(value, forKey: name)
                     continue
                 }
