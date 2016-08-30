@@ -14,6 +14,7 @@
 		69393AEB1D750D4D00A56B12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69393AE91D750D4D00A56B12 /* LaunchScreen.storyboard */; };
 		69393AF61D750D4D00A56B12 /* EDJ2OTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69393AF51D750D4D00A56B12 /* EDJ2OTests.swift */; };
 		69393B011D750D4D00A56B12 /* EDJ2OUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69393B001D750D4D00A56B12 /* EDJ2OUITests.swift */; };
+		69393B101D750F1F00A56B12 /* NSObject+EDJ2O.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69393B0F1D750F1F00A56B12 /* NSObject+EDJ2O.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		69393AFC1D750D4D00A56B12 /* EDJ2OUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EDJ2OUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69393B001D750D4D00A56B12 /* EDJ2OUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EDJ2OUITests.swift; sourceTree = "<group>"; };
 		69393B021D750D4D00A56B12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69393B0F1D750F1F00A56B12 /* NSObject+EDJ2O.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+EDJ2O.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		69393ADF1D750D4C00A56B12 /* EDJ2O */ = {
 			isa = PBXGroup;
 			children = (
+				69393B0E1D750F1100A56B12 /* EDJ2O */,
 				69393AE01D750D4D00A56B12 /* AppDelegate.swift */,
 				69393AE21D750D4D00A56B12 /* ViewController.swift */,
 				69393AE41D750D4D00A56B12 /* Main.storyboard */,
@@ -123,6 +126,14 @@
 				69393B021D750D4D00A56B12 /* Info.plist */,
 			);
 			path = EDJ2OUITests;
+			sourceTree = "<group>";
+		};
+		69393B0E1D750F1100A56B12 /* EDJ2O */ = {
+			isa = PBXGroup;
+			children = (
+				69393B0F1D750F1F00A56B12 /* NSObject+EDJ2O.swift */,
+			);
+			path = EDJ2O;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69393B101D750F1F00A56B12 /* NSObject+EDJ2O.swift in Sources */,
 				69393AE31D750D4D00A56B12 /* ViewController.swift in Sources */,
 				69393AE11D750D4D00A56B12 /* AppDelegate.swift in Sources */,
 			);
@@ -487,6 +499,7 @@
 				69393B071D750D4D00A56B12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69393B081D750D4D00A56B12 /* Build configuration list for PBXNativeTarget "EDJ2OTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +508,7 @@
 				69393B0A1D750D4D00A56B12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69393B0B1D750D4D00A56B12 /* Build configuration list for PBXNativeTarget "EDJ2OUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +517,7 @@
 				69393B0D1D750D4D00A56B12 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
