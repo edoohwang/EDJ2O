@@ -4,7 +4,7 @@ import Foundation
 
 let EDModalNames = "modalNames"
 let EDPropertyListDictionaty = "propertyListDictionaty"
-extension NSObject {
+public extension NSObject {
     
 
     /**
