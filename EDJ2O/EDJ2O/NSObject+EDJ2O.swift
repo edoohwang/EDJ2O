@@ -15,11 +15,11 @@ extension NSObject {
      - returns: 模型数组
      */
     // FIXME: 返回值如何动态获得数组元素类型
-    class func objectWithDictionaryArray(dictionaries: [[String: AnyObject!]])->[AnyObject] {
+    class func ed_objectWithDictionaryArray(dictionaries: [[String: AnyObject!]])->[AnyObject] {
         var objs = [AnyObject]()
         
         for dict in dictionaries {
-            let obj = self.objectWithDictionary(dict)
+            let obj = self.ed_objectWithDictionary(dict)
             objs.append(obj)
         }
         return objs
@@ -31,7 +31,7 @@ extension NSObject {
      
      - returns: 模型
      */
-    class func objectWithDictionary(dictionaty: [String: AnyObject!])->(Self) {
+    class func ed_objectWithDictionary(dictionaty: [String: AnyObject!])->(Self) {
         let obj = self.init()
         
         obj.setKVInRuntime(dictionaty)
@@ -93,7 +93,7 @@ extension NSObject {
                     
                     if name == innerObjectKeyString {
                        let clazz: AnyClass = NSClassFromString(innerObjectTypeString)!
-                        let modals = (clazz as! NSObject.Type).objectWithDictionaryArray(dictArray)
+                        let modals = (clazz as! NSObject.Type).ed_objectWithDictionaryArray(dictArray)
                        setValue(modals, forKey: name)
                     }
                 }
@@ -110,7 +110,7 @@ extension NSObject {
      
      - returns: 需要解释模型内部自定义对象数组的类型字典
      */
-    func innerObjectOfArray() -> [String: AnyClass]? {
+    func ed_innerObjectOfArray() -> [String: AnyClass]? {
         return nil
     }
     
