@@ -3,7 +3,7 @@
 This is a easy extension of NSObject to change JSON/Dictionaty to Object model with Swift!
 
 
-##Installation
+## Installation
 ---
 ### CocoaPods
 
@@ -12,7 +12,7 @@ Add pod 'EDJ2O' to your Podfile or pod 'EDJ2O', :head if you're feeling adventur
 ### Manually
 Drag the EDJ2O/EDJ2O folder into your project.
 
-##Usage
+## Usage
 ---
 you can make a object and set the key-value with a `json/dictionaty`:
 
@@ -24,7 +24,7 @@ and if you want to make a object array and set the key-value with a `json/dictio
 ```Swift
 let myObjects = MyObject.ed_objectsWithDictionaryArray([objectkeyValueDictionaty]) as! [MyObject]
 ```
-###Nesting
+### Nesting
 if you customize your object inner have customization object array,you need override the method in your customization class to make EDJ2O change correct：
 
 ```Swift
